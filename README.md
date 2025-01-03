@@ -1,57 +1,103 @@
-# Calendar-Application-for-Communication-Tracking
-1. Objective:
-The goal is to develop a React-based Calendar Application to track communication with companies. The app will log past communications, schedule future ones, and manage engagement frequency.
+# Calendar Application for Communication Tracking
 
-2. Admin Module:
-Company Management:
--> Add, edit, or delete companies.
--> Information like name, location, emails, and phone numbers.
--> Set communication frequency.
+This Calendar Application helps companies track and manage communication with other organizations. It allows administrators to configure communication parameters, and users can visualize, manage, and log interactions efficiently. The application is built with React and deployed on Netlify.
+
+---
+
+## Features
+
+### Admin Module
+- *Company Management*: Add, edit, and delete companies with details like name, location, LinkedIn profile, emails, phone numbers, comments, and communication periodicity.
+- *Communication Method Management*: Define available communication methods with attributes like name, description, sequence, and mandatory flag.
+
+### User Module
+- *Dashboard*:
+  - View a grid of companies with columns for company name, last five communications, and next scheduled communication.
+  - Color-coded highlights for overdue (red) and due (yellow) communications.
+  - Hover tooltips to display notes for completed communications.
+- *Communication Action*: Log new communications, select communication type, date, and add notes.
+- *Notifications*: Display overdue and today’s communications in separate grids with a badge showing counts.
+- *Calendar View*: Visualize past and upcoming communications interactively.
+
+### Reporting and Analytics Module
+- Communication frequency report.
+- Engagement effectiveness dashboard.
+- Overdue communication trends.
+- Downloadable reports in PDF or CSV.
+- Real-time activity log.
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+- Node.js installed on your system.
+- A code editor like VS Code.
+
+### Steps to Run Locally
+1. Clone the repository:
+   bash
+   git clone <repository-url>
+   cd <repository-directory>
    
-Communication Method Management:
--> Define communication methods (e.g., Email, LinkedIn).
--> Set the order and whether the method is mandatory.
 
-3. User Module:
-Dashboard:
--> Displays company communication data.
--> Color-coded for overdue (Red) and due today (Yellow).
-Interactive Features:
--> Hover to view additional details.
-Communication Action:
--> Users log communication, select type, add date and notes.
-Notifications:
--> Lists overdue and due communications.
-Calendar View:
--> Display past and future communication dates.
+2. Install dependencies:
+   bash
+   npm install
+   
 
-4. Reporting and Analytics Module:
-Reports:
--> Show frequency of each communication method.
--> Track effectiveness of engagement.
-Downloadable Reports:
--> PDF/CSV formats.
-Real-Time Activity Log:
--> Live feed of communication actions.
+3. Start the development server:
+   bash
+   npm start
+   
 
-5. Submission Instructions:
-Source Code:
--> Upload via GitHub repository, following best practices.
-README.md:
--> Provide setup instructions and any known limitations.
-Deployment:
--> Deploy on platforms like Vercel, Netlify, or GitHub Pages.
-Testing & Validation:
--> Ensure smooth functionality and provide sample data for testing.
+4. Open the application in your browser at [http://localhost:3000](http://localhost:3000).
 
-6. Evaluation Criteria:
-Code Quality:
--> Clean, maintainable, and well-documented code.
-Functionality:
--> Ensure all specified features work as expected.
-User Experience:
--> Easy-to-use interface with effective use of colors and tooltips.
-Performance:
--> Smooth performance and efficient data rendering.
-Creativity:
--> Extra features or UI/UX design enhancements.
+---
+
+## Deployment Instructions
+
+This application is deployed on Netlify. To deploy your own version:
+
+1. Create a Netlify account and link it to your GitHub repository.
+2. Configure the build settings:
+   - *Build Command*: npm run build
+   - *Publish Directory*: dist
+3. Deploy the application.
+
+The application will be available at your Netlify-provided URL.
+
+---
+
+## Application Functionality
+
+1. *Admin Features*:
+   - Manage companies and communication methods.
+2. *User Features*:
+   - View and log communications.
+   - Receive notifications for due and overdue tasks.
+   - Use a calendar to track communication schedules.
+3. *Analytics Module*:
+   - Generate and download reports.
+   - View activity trends and engagement metrics.
+
+---
+
+## Known Limitations
+
+- *Customization*: Limited customization of communication methods.
+- *Offline Mode*: Application requires an active internet connection.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
